@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #222;
+    line-height: 1.6;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background: #263238;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+button {
+    background: #00897b;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#about img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.grid div {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    flex: 1 1 200px;
+    max-width: 300px;
+    box-shadow: 0 2px 6px #ccc;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 400px;
+    margin: auto;
+}
+
+input, textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font: inherit;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+footer {
+    background: #263238;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Dark theme */
+body.dark {
+    background: #181818;
+    color: white;
+}
+
+body.dark .grid div {
+    background: #303030;
+    color: white;
+}
+
+body.dark input,
+body.dark textarea {
+    background: #303030;
+    color: white;
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    section {
+        padding: 30px 15px;
+    }
+
+    .grid div {
+        flex-basis: 100%;
+    }
+}
